@@ -1,4 +1,4 @@
-#!/home/cav/tutorial/env/bin/python2
+#!/home/cav/mockAPI/env/bin/python2
 from django.core import management
 
 if __name__ == "__main__":
