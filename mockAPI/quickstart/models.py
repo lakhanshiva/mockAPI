@@ -15,3 +15,14 @@ class Project(models.Model):
 
                 def __unicode__(self):
                         return self.title
+
+class UserDetails(models.Model):
+        userId = models.IntegerField()
+	title = models.CharField(max_length=255)
+	body = models.TextField()
+	
+	class Meta:
+		ordering = ['id']
+
+                def __unicode__(self):
+                        return self.title

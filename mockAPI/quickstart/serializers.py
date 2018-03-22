@@ -1,5 +1,5 @@
 from django.contrib.auth.models import User, Group
-from mockAPI.quickstart.models import Project
+from mockAPI.quickstart.models import Project, UserDetails
 from rest_framework import serializers
 
 
@@ -18,3 +18,8 @@ class ProjectSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Project
         fields = ('url', 'title', 'description', 'language', 'updated_on')
+
+class UserDetailsSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = UserDetails
+        fields = ('userId', 'id', 'title', 'body')
